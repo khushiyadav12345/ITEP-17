@@ -1,0 +1,1 @@
+# 46) WAP to find out the sum of first and last digit of a user entered number 

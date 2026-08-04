@@ -1,0 +1,13 @@
+<!-- Write a program to create a simple calculator using switch. -->
+ <script>
+    let choice =prompt("press 1 for addition. \n press 2 for multiplcation. \n press 3 for subtraction. \n press 4 for division. \n enter your choice")*1;
+        let a =prompt("enter 1st value")*1;
+        let b=prompt("enter 2nd value")*1;
+    switch(choice){
+            case 1: document.write("<h1>Addition:" + (a+b)+"</h1>");break;
+               case 2: document.write("<h1>Multiplication:" + (a*b)+"</h1>");break;
+                  case 3: document.write("<h1>Subtraction:" + (a-b)+"</h1>");break;
+                     case 4: document.write("<h1>Division:" + (a/b)+"</h1>");break;
+                     default:document.write("invalid value");
+           }   
+</script>

@@ -1,0 +1,1 @@
+# 56) WAP to print factorial of all the numbers between two entered numbers

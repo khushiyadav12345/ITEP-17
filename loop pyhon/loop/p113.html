@@ -1,0 +1,47 @@
+<!-- 
+12345
+ 1__4
+  1_3
+   12
+    1 -->
+<pre>
+<script>
+    for (let i = 1; i <= 5; i++) {
+        for (space = 1; space <= i; space++) {
+            document.write(" ");
+        }
+        for (let j = 1; j <= i; j++) {
+             if ((i == 3 && j == 2) || (i == 4 && j > 1 && j < 4))
+                    document.write("_");
+                else {
+                    document.write(j);
+                }
+
+        }
+        document.write("<br>");
+
+
+    }
+
+</script>
+</pre>
+
+<pre>
+<script>
+    for (i = 1; i <= 5; i++) {
+        for (Space = i; Space <= 5; Space++) {
+            document.write(" ");
+        }
+        {
+            for (j = 1; j <= i; j++) {
+                if ((i == 3 && j == 2) || (i == 4 && j > 1 && j < 4))
+                    document.write("*");
+                else {
+                    document.write("1");
+                }
+            }
+            document.write("<br>");
+        }
+    }
+</script>
+</pre>

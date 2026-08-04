@@ -1,0 +1,9 @@
+# 42) WAP to find out HCF of a number
+N = int(input("Enter the first number: "))
+M = int(input("Enter the second number: "))
+def hcf(a, b):
+    while b:
+        a, b = b, a % b
+    return an
+print("The HCF of", N, "and", M, "is:", hcf(N, M))
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     

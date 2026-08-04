@@ -1,0 +1,11 @@
+<!-- Write a program to validate user input type using switch. -->
+<script>
+    let input=prompt("enter anything");
+    switch(true){
+        case isNaN(input):document.write("invalid input");
+        break;
+        case !isNaN(input):document.write("valid input");
+        break;
+        default:document.write("invalid input");
+    }
+</script>

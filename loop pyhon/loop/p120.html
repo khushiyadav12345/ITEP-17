@@ -1,0 +1,24 @@
+<!-- 
+    A
+   A B
+  A B C
+ A B C D
+A B C D E   -->
+<pre>
+<script>
+  
+    for (let i = 1; i <= 5; i++) {
+          let char= 65;
+        for (space = 5; space >= i; space--) {
+            document.write(" ");
+        }
+        for (let j = 1; j <= i; j++) {
+            document.write(String.fromCharCode(char)," ");
+            char++;
+        }
+        document.write("<br>");
+
+    }
+
+</script>
+</pre>

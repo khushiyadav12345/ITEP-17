@@ -1,0 +1,25 @@
+<!-- 
+a
+bc
+d f
+g  j
+klmno -->
+<pre>
+<script>
+    let char=97;
+        for(let i=1;i<=5;i++)
+    {
+        for(let j=1;j<=i;j++)
+    {
+         if(i==j||j==1||i==5){
+            document.write(String.fromCharCode(char));
+            char++;
+         }
+         else{
+            document.write(" ");
+         }
+    }
+ document.write("<br>");
+    }
+</script>
+</pre>

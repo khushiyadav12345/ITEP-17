@@ -1,0 +1,1 @@
+# 50) WAP to find out all the palindrome numbers between two entered numbers
