@@ -1,0 +1,26 @@
+<nav class="navbar navbar-expand-sm">
+  <a class="brand" href="/">Dream Journal</a>
+  <ul class="navbar-nav ml-auto flex-row">
+    <li class="nav-item">
+      <a class="nav-link" href="/">Home</a>
+    </li>
+    {%if request.session.get("is_logged_in",None)%}
+    <li class="nav-item">
+      <a class="nav-link" href="/dream-list">Dream list</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="/create-dream">Add dream</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="/signout">Signout</a>
+    </li>
+    {%else%}
+    <li class="nav-item">
+      <a class="nav-link" href="/signin">Sign in</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="/signup">Sign up</a>
+    </li>
+    {%endif%}
+  </ul>
+</nav>

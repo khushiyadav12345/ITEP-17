@@ -1,0 +1,50 @@
+<html>
+  <head>
+      <title>Dream list</title>
+      {%include "__bootstrap.html"%}
+  </head>
+<body>
+  {%include "__navigation.html"%}
+  <div class="container mt-3">
+      <h1>Your dreams</h1>
+      {%if message%}
+        <div class="alert alert-success">{{message}}</div>
+      {%endif%}
+      <div class="table-wrap">
+      <table class="table">
+          <thead>
+            <tr>
+              <th>S.no</th>
+              <th>Title</th>
+              <th>Description</th>
+              <th>Mood</th>
+              <th>Delete</th>
+              <th>Edit</th>
+            </tr>
+          </thead>
+          <tbody>
+           {%for dream in dream_list%}
+             {%set mood_class = "mood-" ~ dream.mood|lower%}
+             <tr>
+                 <td>{{loop.index}}</td>
+                 <td>{{dream.title}}</td>
+                 <td>{{dream.description}}</td>
+                 <td><span class="mood-badge {{mood_class}}">{{dream.mood}}</span></td>
+                 <td>
+                    <a onclick="return confirm('Do you want to delete it?')" href="/delete-dream/{{dream.id}}">
+                     <button class="btn btn-outline-danger btn-sm">Delete</button>
+                    </a>
+                 </td>
+                 <td>
+                   <a href="/update-dream/{{dream.id}}">
+                     <button class="btn btn-secondary btn-sm">Edit</button>
+                   </a>
+                 </td>
+             </tr>
+           {%endfor%}
+          </tbody>
+      </table>
+      </div>
+  </div>
+</body>
+</html>

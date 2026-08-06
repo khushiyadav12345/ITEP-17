@@ -1,0 +1,40 @@
+<html>
+  <head>
+      <title>Update Dream</title>
+      {%include "__bootstrap.html"%}
+  </head>
+  <body>
+   {%include "__navigation.html"%}
+  <div class="container mt-4" style="max-width: 550px;">
+      <h1>Edit dream</h1>
+      <div class="card">
+      <div class="card-body">
+      <form method="post" action="/update-dream">
+          <input type="hidden" name="id" value="{{dream.id}}"/>
+          <div class="form-group">
+              <label>Dream title</label>
+              <input value="{{dream.title}}" name="title" type="text" class="form-control"/>
+          </div>
+          <div class="form-group">
+              <label>What happened in the dream?</label>
+              <textarea name="description" class="form-control" rows="4">{{dream.description}}</textarea>
+          </div>
+          <div class="form-group">
+            <label>Mood</label>
+              <select name="mood" class="form-control">
+                  <option value="{{dream.mood}}" selected>{{dream.mood}}</option>
+                  <option value="Happy">Happy</option>
+                  <option value="Scary">Scary</option>
+                  <option value="Confusing">Confusing</option>
+                  <option value="Sad">Sad</option>
+                  <option value="Exciting">Exciting</option>
+              </select>
+          </div>
+          <button type="submit" class="btn btn-secondary">Update</button>
+      </form>
+      </div>
+      </div>
+  </div>
+  </body>
+</html>
+
