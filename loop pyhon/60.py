@@ -1,1 +1,0 @@
-# 60) WAP to print Square, Cube and Square Root of all numbers from 1 to N

@@ -1,1 +1,0 @@
-# 54) WAP to print all the even numbers between two entered numbers

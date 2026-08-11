@@ -1,1 +1,0 @@
-# 58) WAP to convert decimal number into binary number without using array

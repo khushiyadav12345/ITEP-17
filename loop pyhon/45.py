@@ -1,1 +1,0 @@
-# 45) WAP to find out the sum of all the digits of a numbern -
